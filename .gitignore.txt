@@ -1,0 +1,9 @@
+.obsidian/workspace
+.obsidian/cache
+.obsidian/debuginfo
+.obsidian/local-plugins
+.trash
+.DS_Store
+Thumbs.db
+node_modules/
+.vscode/
