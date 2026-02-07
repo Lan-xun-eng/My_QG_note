@@ -13,8 +13,12 @@
 
 #### (3)startswith
 - **基本语法：**
-  `str.startswith(prefix[, start[, end]])`
-
+```python
+str.startswith(prefix[, start[, end]])
+```
+- `prefix`：要检查的前缀，可以是字符串或字符串元组
+- `start`：开始检查的位置（默认从开头开始）
+- `end`：结束检查的位置（默认到字符串末尾）
 ---
 ## 四、布尔类型
 
