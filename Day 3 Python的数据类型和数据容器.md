@@ -1,11 +1,22 @@
 # 简单数据类型
-## 整数int
+## 一、整数int
 
 ---
-## 浮点数float
+## 二、浮点数float
 
 ---
-## 布尔类型
+## 三、字符串
+### 1. 内置方法
+#### （1）strip( )
+
+#### (2)split( )
+
+#### (3)startswith
+- **基本语法：**
+  `str.startswith(prefix[, start[, end]])`
+
+---
+## 四、布尔类型
 
 - 布尔类型只有2种值：**Ture/Flase**
 - Ture/Flase的首字母一定要**大写**
@@ -14,7 +25,7 @@
 - 优先级：not > and > or  
 
 ---
-## 空值NoneType
+## 五、空值NoneType
 
 ---
 # 数据容器
