@@ -51,7 +51,7 @@ circle2 = Circle(3)  # 圆形2，半径3
 rectangle1 = Rectangle(4, 6)  # 矩形1，宽4高6
 rectangle2 = Rectangle(2, 8)  # 矩形2，宽2高8
 
-# 2. 获取面积（多态体现：用同样的方法获取不同图形的面积）
+# 2. 求面积
 shapes = [circle1, circle2, rectangle1, rectangle2]
 
 print()
@@ -63,10 +63,3 @@ print()
 # 3. 获取创建图形的数量
 print(f"目前一共创建了{Shape.get_total_shapes()}个图形")
 print()
-
-# 4. 验证是否确实不能直接访问私有属性
-try:
-    print(f"尝试直接看圆形的面积: {circle1.__area}")
-except AttributeError as e:
-    print(f"错误信息: {e}")
-    print("说明：不能通过__area直接获取图形面积，必须通过get_area()获得")
