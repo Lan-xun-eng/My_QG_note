@@ -20,3 +20,10 @@ arr = np.arrange(起始值, 终点值, 步长)
 #### 3.2 random.rand()
 
 #### 3.3 random.uniform()
+
+
+## 二、类型转换
+- **基本语法：**
+```python
+arr.astype(np.float32)
+```
