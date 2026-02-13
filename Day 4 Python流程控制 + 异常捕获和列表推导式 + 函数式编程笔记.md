@@ -124,7 +124,7 @@ except ValueError as e:
 ---
 # 五、列表推导式
 
-### 1. 基本语法
+### 5.1 基本语法
 ```python
 [表达式 for 变量 in 可迭代对象 if 条件]
 ```
@@ -134,7 +134,7 @@ except ValueError as e:
 - “可迭代对象”比如列表、元组、字符串、集合等
 - “if 条件”是可选项，只有满足条件才加入新列表
 
-### 2. 举个栗子
+### 5.2 举个栗子
 ```python
 # 生成1~5的平方列表
 squares = [x ** 2 for x in range(1, 6)]
