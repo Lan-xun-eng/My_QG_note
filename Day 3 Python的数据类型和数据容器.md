@@ -7,14 +7,112 @@
 ---
 ## 三、字符串
 ### 1. 基本语法
-- 单引号/双引号皆可 -> ` "abc" ` / ` 'abc' `
+- **单引号/双引号/三引号** 皆可
+```python
+# 单引号
+s1 = 'Hello'
+# 双引号
+s2 = "World"
+# 三引号（可跨行，保留格式）
+s3 = '''这是一个
+多行
+字符串'''
+```
 
-### 2. 内置方法
-#### （1）strip( )
+### 2. 字符串是不可变的
+- 字符串一旦创建，内部字符不能修改
+- 所有看似“修改”的操作，其实都是创建了新的字符串对象
 
-#### (2)split( )
+### 3. 字符串的加减法：
+- `+` ：**连接**多个字符串，拼接成长字符串
+- `*` ：**复制**字符串，扩张多少倍
 
-#### (3)startswith
+### 4. 常用字符串方法
+#### （1） 大小写转换
+- `upper()`   **全部改为大写**
+- `lower()`   **全部改为小写**
+- `capitalize()`   **首字母大写，其余小写**
+- `title()`   **每个单词首字母大写**
+- `swapcase()`   **大小写互换**
+```python
+s = 'hello World'
+
+s.upper()          # 'HELLO WORLD'
+s.lower()          # 'hello world'
+s.capitalize()     # 'Hello world'（首字母大写，其余小写）
+s.title()          # 'Hello World'（每个单词首字母大写）
+s.swapcase()       # 'HELLO wORLD'（大小写互换）
+```
+
+
+#### （2）查找统计
+- `find() `       **第一次出现的位置，找不到返回-1**
+- `rfind()`       **从右找第一次出现的位置**
+- `count()  `     **统计子串出现次数**
+```python
+s = 'hello world'
+
+s.find('o')        # 4（第一次出现的位置，找不到返回-1）
+s.rfind('o')       # 7（从右找第一次出现的位置）
+s.count('l')       # 3（统计子串出现次数）
+'world' in s       # True（成员判断）
+```
+
+#### （3）去除空白
+- **作用：** 清楚字符串首尾的空格
+- `lstrip()` 和 `rstrip()` 分别指 清除左边/右边的空格
+- `strip()` 还可以指定去除的内容
+
+```python
+s = '  hello  \n'
+
+s.strip()          # 'hello'（去除两端空白字符）
+s.lstrip()         # 'hello  \n'（去除左侧空白）
+s.rstrip()         # '  hello'（去除右侧空白）
+
+# 可指定要去除的字符
+s2 = '---abc---'
+s2.strip('-')      # 'abc'
+```
+
+#### （4）分割连接
+- `split()`   **将字符串按指定分隔符拆分为列表**
+- `partition() `   **只分割一次，返回三部分（分隔符前、分隔符本身、分隔符后）**
+- `join()`   **将可迭代对象中的字符串连接成一个字符串**
+- `splitlines()`   **按行拆分**
+>所谓按行就是看 `\n` 
+
+```python
+# split() 将字符串按指定分隔符拆分为列表
+s = 'apple,banana,orange'
+s.split(',')       # ['apple', 'banana', 'orange']
+
+# partition() 只分割一次，返回三部分（分隔符前、分隔符本身、分隔符后）
+s.partition(',')   # ('apple', ',', 'banana,orange')
+
+# join() 将可迭代对象中的字符串连接成一个字符串
+sep = '-'
+sep.join(['2025', '03', '28'])   # '2025-03-28'
+
+# splitlines() 按行拆分
+lines = '第一行\n第二行'
+lines.splitlines()  # ['第一行', '第二行']
+```
+
+#### （5）替换
+- `replace()`   替换
+
+```python
+s = 'hello world'
+
+s.replace('world', 'Python')  # 'hello Python'
+
+# 可指定替换次数
+s = 'a-b-c-d'
+s.replace('-', '+', 2)        # 'a+b+c-d'（只替换前2个）
+```
+
+#### （6）startswith( )
 - **基本语法：**
 ```python
 str.startswith(prefix[, start[, end]])
@@ -22,6 +120,28 @@ str.startswith(prefix[, start[, end]])
 - `prefix`：要检查的前缀，可以是字符串或字符串元组
 - `start`：开始检查的位置（默认从开头开始）
 - `end`：结束检查的位置（默认到字符串末尾）
+
+
+
+### 5. 索引与切片
+- **从0开始** 
+- `[正数]` 从左到右
+  `[负数]` 从右到左
+```python
+s = 'Python'
+
+# 索引（从0开始）
+s[0]   # 'P'
+s[-1]  # 'n'（负数从右往左，-1为最后一个）
+
+# 切片 [start:stop:step]
+s[0:3]    # 'Pyt'（包含start，不包含stop）
+s[:3]     # 'Pyt'（省略start表示从开头）
+s[3:]     # 'hon'（省略stop表示到结尾）
+s[::2]    # 'Pto'（步长2）
+s[::-1]   # 'nohtyP'（反向字符串）
+```
+
 ---
 ## 四、布尔类型
 
