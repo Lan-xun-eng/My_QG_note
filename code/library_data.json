@@ -1,0 +1,48 @@
+{
+    "books": [
+        {
+            "title": "三体",
+            "author": "刘慈欣",
+            "isbn": "000001",
+            "available": true
+        },
+        {
+            "title": "龙族",
+            "author": "江南",
+            "isbn": "000002",
+            "available": true
+        },
+        {
+            "title": "九州缥缈录",
+            "author": "江南",
+            "isbn": "000003",
+            "available": false
+        }
+    ],
+    "users": [
+        {
+            "username": "张三",
+            "password": "100000",
+            "role": "reader"
+        },
+        {
+            "username": "李四",
+            "password": "100001",
+            "role": "reader"
+        },
+        {
+            "username": "熊大",
+            "password": "100002",
+            "role": "admin"
+        }
+    ],
+    "records": [
+        {
+            "username": "李四",
+            "isbn": "000003",
+            "borrow_date": "2026-02-06",
+            "return_date": null,
+            "returned": false
+        }
+    ]
+}
