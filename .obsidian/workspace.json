@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day 10 向量&矩阵乘法.md",
+                "file": "Day 8(1) Pandas.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day 10 向量&矩阵乘法"
+              "title": "Day 8(1) Pandas"
             }
           }
         ]
@@ -183,8 +183,8 @@
   },
   "active": "abf835bf4ec4e4f6",
   "lastOpenFiles": [
-    "code/house_values_histogram.png",
     "Day 10 向量&矩阵乘法.md",
+    "code/house_values_histogram.png",
     "Day 8(2) Matplotlib.md",
     "Day 7 numpy.md",
     "Day 8(1) Pandas.md",
