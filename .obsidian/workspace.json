@@ -20,21 +20,8 @@
               "icon": "lucide-file",
               "title": "Day 14 机器学习的基础概念"
             }
-          },
-          {
-            "id": "2f8ba6c35fc1cd19",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.12.4"
-              },
-              "icon": "lucide-book-up",
-              "title": "版本说明 1.12.4"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -194,7 +181,7 @@
       "bases:新建数据库": false
     }
   },
-  "active": "2f8ba6c35fc1cd19",
+  "active": "2dfef61b3d4a95e3",
   "lastOpenFiles": [
     "Day 4 Python流程控制 + 异常捕获和列表推导式 + 函数式编程笔记.md",
     "Day 14 机器学习的基础概念.md",
