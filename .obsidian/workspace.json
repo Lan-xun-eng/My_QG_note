@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Day 14 机器学习的基础概念.md",
+                "file": "Day 14~17 机器学习札记.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day 14 机器学习的基础概念"
+              "title": "Day 14~17 机器学习札记"
             }
           }
         ]
@@ -183,9 +183,9 @@
   },
   "active": "2dfef61b3d4a95e3",
   "lastOpenFiles": [
+    "Day 10~13 线性代数札记.md",
+    "Day 14~17 机器学习札记.md",
     "Day 4 Python流程控制 + 异常捕获和列表推导式 + 函数式编程笔记.md",
-    "Day 14 机器学习的基础概念.md",
-    "Day 10~13 线性代数.md",
     "Day 10(2) 矩阵消元.md",
     "Pasted image 20260226213929.jpg",
     "Pasted image 20260226213452.png",
