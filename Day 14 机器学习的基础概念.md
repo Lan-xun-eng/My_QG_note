@@ -464,3 +464,27 @@ $$
 #### (3). 处理重复数据
 - **完全重复**：所有列完全相同，直接去重
 - **部分重复**：根据关键字段（如 ID）识别，保留最新或最完整的记录，或合并信息
+
+```python
+# 完全重复
+## 查看重复行
+duplicates = df[df.duplicated()]
+## 删除完全重复行（保留第一次出现）
+df.drop_duplicates(inplace=True)
+## 保留最后一次出现
+df.drop_duplicates(keep='last', inplace=True)
+
+# 部分重复
+df = df.sort_values('timestamp')
+df.drop_duplicates(subset=['user_id'], keep='last', inplace=True)
+```
+
+#### (4). 数据类型转换
+- 确保数值列是 `int`/`float`，日期列是 `datetime`，类别列是 `category` 或 `object`
+- 转换时需处理异常值（如无法转换的设为缺失
+
+#### (5). 格式标准化
+- 日期统一为 `YYYY-MM-DD`
+- 文本统一大小写（大写/小写/首字母大写）
+- 去除前后空格、特殊字符
+- 类别标签统一（如“男”和“Male”映射为同一编码）
