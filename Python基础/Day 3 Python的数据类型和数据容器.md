@@ -176,9 +176,6 @@ print(f'大写：{name.upper()}')      # 大写：ALICE
 - 优先级：not > and > or  
 
 ---
-## 五、空值NoneType
-
----
 # 数据容器
 ## 一、列表
 ### 1.1 如何创建列表？

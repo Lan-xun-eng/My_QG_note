@@ -16,8 +16,10 @@ arr = np.arrange(起始值, 终点值, 步长)
 
 ### 3. random随机生成
 #### 3.1 random.randint()
+生成随机整数
 
 #### 3.2 random.rand()
+生成随机
 
 #### 3.3 random.uniform()
 
