@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python数据分析/Day 8(1) Pandas.md",
+                "file": "机器学习/Day 14~17 机器学习札记.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day 8(1) Pandas"
+              "title": "Day 14~17 机器学习札记"
             }
           }
         ],
@@ -198,6 +198,7 @@
   },
   "active": "04f3c175d6b111ac",
   "lastOpenFiles": [
+    "Python数据分析/Day 8(1) Pandas.md",
     "Python数据分析/Day 7 numpy.md",
     "机器学习/Day 14~17 机器学习札记.md",
     "Python基础/Day 4 Python流程控制 + 异常捕获和列表推导式 + 函数式编程笔记.md",
@@ -217,7 +218,6 @@
     "线性代数/Pasted image 20260226213929.jpg",
     "Pasted image 20260226213452.png",
     "线性代数/Pasted image 20260226210613.png",
-    "Python数据分析/Day 8(1) Pandas.md",
     "Day 10 向量&矩阵乘法.md",
     "01-方程组的几何解释.md",
     "Python数据分析/Day 8(2) Matplotlib.md",
