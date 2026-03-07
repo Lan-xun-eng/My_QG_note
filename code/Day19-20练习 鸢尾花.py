@@ -72,6 +72,73 @@ class KMeans:
         self.fit(X)
         return self.labels_
 
+
+def silhouette_score(X, labels):
+    n_samples = X.shape[0]
+    unique_labels = np.unique(labels)
+    n_clusters = len(unique_labels)
+
+    if n_clusters == 1:
+        return 0.0
+
+    diff = X[:, np.newaxis, :] - X[np.newaxis, :, :]
+    dist_matrix = np.sqrt(np.sum(diff ** 2, axis=2))  # (n_samples, n_samples)
+
+    s = np.zeros(n_samples)
+    for i in range(n_samples):
+        same_cluster = (labels == labels[i])
+        same_cluster[i] = False
+        if np.sum(same_cluster) == 0:
+            a_i = 0
+        else:
+            a_i = np.mean(dist_matrix[i, same_cluster])
+
+        b_i = np.inf
+        for label in unique_labels:
+            if label == labels[i]:
+                continue
+            other_cluster = (labels == label)
+            mean_dist = np.mean(dist_matrix[i, other_cluster])
+            if mean_dist < b_i:
+                b_i = mean_dist
+
+        if a_i == 0 and b_i == np.inf:
+            s[i] = 0
+        else:
+            s[i] = (b_i - a_i) / max(a_i, b_i)
+
+    return np.mean(s)
+
+def purity_score(y_true, y_pred):
+    contingency = np.zeros((len(np.unique(y_true)), len(np.unique(y_pred))))
+    for i in range(len(y_true)):
+        contingency[y_true[i], y_pred[i]] += 1
+
+    return np.sum(np.max(contingency, axis=0)) / len(y_true)
+
+
+# 这次的代码借鉴了ai，因为感觉对机器学习部分的内容掌握还不熟练，后续熟练后可能会修改
+# 获取数据
 iris = load_iris()
 X = iris.data
 y_true = iris.target
+
+# 设置随机种子保证可复现
+kmeans = KMeans(n_clusters=3, max_iter=300, tol=1e-4, random_state=42)
+kmeans.fit(X)
+
+# 预测标签
+y_pred = kmeans.labels_
+
+# 计算轮廓系数
+sil_score = silhouette_score(X, y_pred)
+print(f"轮廓系数: {sil_score:.4f}")
+
+# 计算纯度
+purity = purity_score(y_true, y_pred)
+print(f"纯度: {purity:.4f}")
+
+# 输出 inertia
+print(f"簇内平方和: {kmeans.inertia_:.2f}")
+print(f"迭代次数: {kmeans.n_iter_}")
+print("簇中心:\n", kmeans.cluster_centers_)
