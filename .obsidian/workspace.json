@@ -11,10 +11,14 @@
             "id": "4987af6147c6c515",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "机器学习/Day 14~17 机器学习札记.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "Day 14~17 机器学习札记"
             }
           }
         ]
