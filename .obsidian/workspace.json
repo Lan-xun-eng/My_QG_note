@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "机器学习/Day 14~17 机器学习札记.md",
+                "file": "Python数据分析/Day 8(1) Pandas.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Day 14~17 机器学习札记"
+              "title": "Day 8(1) Pandas"
             }
           }
         ]
@@ -184,11 +184,13 @@
   "active": "4987af6147c6c515",
   "lastOpenFiles": [
     "Python数据分析/Day 7 numpy.md",
-    "冬训营总结体会.md",
-    "机器学习/Day 14~17 机器学习札记.md",
-    "Python数据分析/Day 8(1) Pandas.md",
-    "Python基础/Day 4 Python流程控制 + 异常捕获和列表推导式 + 函数式编程笔记.md",
     "Python基础/Day 5 Python面向对象编程.md",
+    "Python基础/Day 4 Python流程控制 + 异常捕获和列表推导式 + 函数式编程笔记.md",
+    "Python基础/Day 1-2 基本工具安装.md",
+    "Python基础/Day 3 Python的数据类型和数据容器.md",
+    "机器学习/Day 14~17 机器学习札记.md",
+    "冬训营总结体会.md",
+    "Python数据分析/Day 8(1) Pandas.md",
     "Python基础/Day 6 图书管理系统.md",
     "code/Survival Rate by Pclass Pie Chart.png",
     "机器学习",
@@ -196,9 +198,7 @@
     "Python数据分析",
     "code/Survival Rate by Embarked Pie Chart.png",
     "code/house_values_histogram.png",
-    "Python基础/Day 3 Python的数据类型和数据容器.md",
     "Python基础",
-    "Python基础/Day 1-2 基本工具安装.md",
     "线性代数/Day 10~13 线性代数札记.md",
     "Day 10(2) 矩阵消元.md",
     "线性代数/Pasted image 20260226213929.jpg",

@@ -202,8 +202,8 @@ animal_speak(dog)
 
 ## 十二、类方法和静态方法
 
-- **类方法**：用 `@classmethod` 装饰，参数是 `cls`，表示类本身。
-- **静态方法**：用 `@staticmethod` 装饰，没有 `self` 或 `cls`。
+- **类方法**：用 `@classmethod` 装饰，参数是 `cls`，表示类本身 
+- **静态方法**：用 `@staticmethod` 装饰，没有 `self` 或 `cls` 
 
 **举个栗子**
 ```python
